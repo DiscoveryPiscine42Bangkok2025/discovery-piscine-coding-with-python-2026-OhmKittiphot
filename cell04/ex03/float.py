@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def check_number(num_str):
     if num_str.isdigit():
         print("This number is an integer.")
