@@ -8,6 +8,7 @@ def checkmate(board):
     height = len(grid)
     width = len(grid[0]) if height > 0 else 0
 
+#Find King
     k_r, k_c = -1, -1
     for r in range(height):
         for c in range(width):
@@ -35,6 +36,7 @@ def checkmate(board):
             curr_c += step_c
         return True
 
+#Find Enemmy
     for r in range(height):
         for c in range(width):
             piece = grid[r][c]
